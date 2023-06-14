@@ -38,8 +38,8 @@ background-size: cover;
 }
 
 .logo img{
-    max-height: 500px;
-max-width: 600px;
+max-height: 200px;
+max-width: 300px;
 margin: auto;
 display: block;
 }
