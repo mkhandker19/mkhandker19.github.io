@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS\style.css"/>
+    <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 <!-- Top Navbar -->
 <nav class="top-navbar">
     <div class="nav-left">
@@ -22,14 +23,78 @@
     </div>
 </nav>
 
+<!-- Profile Picture -->
+<div class="profile-pic">
+    <img src="Images/jhbnbhb hb hjn.jpg" alt="Profile Picture">
+</div>
+
+<!-- Name -->
+<h1 class="name">
+    Hello, I am Mahin Khandker!
+</h1>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul class="nav-items">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+    </ul>
+</nav>
+
+<!-- Buttons -->
+<div class="buttons">
+    <button class="button">Contact Me</button>
+    <button class="button">Learn More</button>
+</div>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <img src="Images/html.png" alt="HTML">
+        <img src="Images/css.png" alt="CSS">
+        <img src="Images/javascript.png" alt="JavaScript">
+        <img src="Images/java.png" alt="Java">
+        <!-- Add more skill images as needed -->
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <a href="https://github.com/mkhandker19/project1" target="_blank">
+            <img src="Images/project1.png" alt="Project 1">
+            <p>Project 1</p>
+        </a>
+        <a href="https://github.com/mkhandker19/project2" target="_blank">
+            <img src="Images/project2.png" alt="Project 2">
+            <p>Project 2</p>
+        </a>
+        <a href="https://github.com/mkhandker19/project3" target="_blank">
+            <img src="Images/project3.png" alt="Project 3">
+            <p>Project 3</p>
+        </a>
+        <a href="https://github.com/mkhandker19/project4" target="_blank">
+            <img src="Images/project4.png" alt="Project 4">
+            <p>Project 4</p>
+        </a>
+    </div>
+</section>
+
 </body>
 
+<!-- Footer -->
 <footer>
     <div class="foot">
-        <a href="https://www.linkedin.com/in/mahin-khandker-883938186/" target="_blank" class="link"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
-        <a href="https://github.com/mkhandker19" target="_blank" class="link"><i class="fa fa-github-square" style="font-size:36px"></i></a>
-        <p>© 2023 Mahin Khandker</p>
-
+        <p>© <span id="year"></span> Mahin Khandker</p>
     </div>
 </footer>
+
+<!-- Script to update the year automatically -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </html>
