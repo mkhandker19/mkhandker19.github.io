@@ -227,6 +227,59 @@ body {
     background-color: var(--border-color); /* Dark grey */
     color: var(--accent-color); /* White */
 }
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #222;
+    color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #27ae60;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.contact-card:hover {
+    background: #444;
+    transform: translateY(-5px);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-card span {
+    font-size: 1rem;
+}
 
 /* Footer */
 footer {
