@@ -1,141 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahin Khandker | Portfolio</title>
+
+    <!-- Font Awesome 6 (remove the old 4.7 include to avoid conflicts) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
 </head>
 
 <body>
+<!-- Animated background -->
+<div class="animated-bg" aria-hidden="true"></div>
 
 <!-- Top Navbar -->
 <nav class="top-navbar">
     <div class="nav-left">
-        <h2>Mahin Khandker</h2>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
+
     <div class="nav-right">
-        <a href="https://www.linkedin.com/in/mahin-khandker-883938186/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
-        <a href="Docs/resume.pdf" target="_blank"><i class="fa fa-file-text" style="font-size:24px"></i></a>
-        <a href="https://github.com/mkhandker19" target="_blank"><i class="fa fa-github-square" style="font-size:24px"></i></a>
+        <a href="Docs/resume.pdf" target="_blank" title="Resume" aria-label="Resume">
+            <i class="fa-solid fa-file-lines"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mahin-khandker-883938186/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/mkhandker19" target="_blank" title="GitHub" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
     </div>
 </nav>
 
-<!-- Profile Picture -->
-<div class="profile-pic">
-    <img src="Images/profile.jpg" alt="Profile Picture">
-</div>
+<!-- HOME -->
+<section id="home">
+    <!-- Profile Picture -->
+    <div class="profile-pic">
+        <img src="Images/profile.jpg" alt="Profile Picture of Mahin Khandker">
+    </div>
 
-<!-- Name -->
-<h1 class="name">
-    Hello, I am Mahin Khandker!
-</h1>
+    <!-- Name -->
+    <h1 class="name">
+        Hello, I am Mahin Khandker!
+    </h1>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <ul class="nav-items">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-    </ul>
-</nav>
+    <!-- About quick blurb (kept your paragraph below too) -->
+    <nav class="navbar" aria-label="Section navigation">
+        <ul class="nav-items">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+    </nav>
+</section>
 
-<!-- About Me Paragraph -->
-<div class="about-me">
-    <p>
-        I am a Computer Science student at Farmingdale State College with a strong passion for software engineering and databases.
-        I enjoy building efficient, user-friendly applications and exploring backend technologies that power real-world systems.
-    </p>
-</div>
-
-<!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill">
-            <img src="Images/htmll.png" alt="HTML">
-            <p>HTML</p>
-        </div>
-        <div class="skill">
-            <img src="Images/cssss.png" alt="CSS">
-            <p>CSS</p>
-        </div>
-        <div class="skill">
-            <img src="Images/jss.png" alt="JavaScript">
-            <p>JavaScript</p>
-        </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="React">
-            <p>React</p>
-        </div>
-        <div class="skill">
-            <img src="Images/java.png" alt="Java">
-            <p>Java</p>
-        </div>
-        <div class="skill">
-            <img src="Images/sqll.png" alt="SQL">
-            <p>SQL</p>
-        </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="MongoDB">
-            <p>MongoDB</p>
-        </div>
-        <div class="skill">
-            <img src="Images/cplusplus.png" alt="C++">
-            <p>C++</p>
-        </div>
-
-        <div class="skill">
-            <img src="Images/c.png" alt="C">
-            <p>C</p>
-        </div>
-        <div class="skill">
-            <img src="Images/python.png" alt="Python">
-            <p>Python</p>
-        </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="Shell">
-            <p>Shell</p>
-        </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="Node.js">
-            <p>Node.js</p>
-        </div>
-            <div class="skill">
-                <img src="Images/shell.png" alt="Shell">
-                <p>Shell</p>
-            </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="Git">
-            <p>Git</p>
-        </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="Docker">
-            <p>Docker</p>
-        </div>
-        <div class="skill">
-            <img src="Images/shell.png" alt="Replit">
-            <p>Replit</p>
-        </div>
+<!-- ABOUT -->
+<section id="about">
+    <div class="about-me">
+        <p>
+            I am a Computer Science student at Farmingdale State College with a strong passion for software engineering and databases.
+            I enjoy building efficient, user-friendly applications and exploring backend technologies that power real-world systems.
+        </p>
     </div>
 </section>
 
-<!-- Projects Section -->
+<div class="skills-container">
+    <div class="skill">
+        <img src="Images/htmll.png" alt="HTML">
+        <p>HTML</p>
+    </div>
+    <div class="skill">
+        <img src="Images/cssss.png" alt="CSS">
+        <p>CSS</p>
+    </div>
+    <div class="skill">
+        <img src="Images/jss.png" alt="JavaScript">
+        <p>JavaScript</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="React">
+        <p>React</p>
+    </div>
+    <div class="skill">
+        <img src="Images/java.png" alt="Java">
+        <p>Java</p>
+    </div>
+    <div class="skill">
+        <img src="Images/sqll.png" alt="SQL">
+        <p>SQL</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="MongoDB">
+        <p>MongoDB</p>
+    </div>
+    <div class="skill">
+        <img src="Images/cplusplus.png" alt="C++">
+        <p>C++</p>
+    </div>
+    <div class="skill">
+        <img src="Images/c.png" alt="C">
+        <p>C</p>
+    </div>
+    <div class="skill">
+        <img src="Images/python.png" alt="Python">
+        <p>Python</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="Shell">
+        <p>Shell</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="Node.js">
+        <p>Node.js</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="Git">
+        <p>Git</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="Docker">
+        <p>Docker</p>
+    </div>
+    <div class="skill">
+        <img src="Images/shell.png" alt="Replit">
+        <p>Replit</p>
+    </div>
+    <!-- New skills -->
+    <div class="skill">
+        <img src="Images/firebase.png" alt="Firebase">
+        <p>Firebase</p>
+    </div>
+    <div class="skill">
+        <img src="Images/azure.png" alt="Azure">
+        <p>Azure</p>
+    </div>
+    <div class="skill">
+        <img src="Images/postgresql.png" alt="PostgreSQL">
+        <p>PostgreSQL</p>
+    </div>
+</div>
+
+
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
     <div class="projects-container">
-
         <div class="project-card">
             <img src="Images/cheesecrave.png" alt="Cheese Crave">
             <h3>Cheese Crave</h3>
             <p>
-                This is a portfolio project created to showcase our technical skills and collaboration capabilities.
-                The main purpose of this project is to demonstrate our proficiency in HTML, CSS, JavaScript, Java,
-                and backend database integration. Although the website is designed as a cheese e-commerce platform,
-                it does not actually sell cheese.
+                Portfolio project showcasing team collaboration and full-stack skills. Designed as a cheese e-commerce concept.
             </p>
             <a href="https://github.com/Cheese-Crave" target="_blank" class="project-link">View Project</a>
         </div>
@@ -144,9 +171,7 @@
             <img src="Images/mediavault.png" alt="MediaVault">
             <h3>MediaVault</h3>
             <p>
-                MediaVault is a movie rental application designed to provide users with an enjoyable experience
-                for browsing and renting their favorite media. It offers a user-friendly interface and allows
-                users to browse movies, securely log in, and access movies based on genre or language.
+                Movie rental application with login, browsing, and category filtering. Java + JavaFX + Azure DB.
             </p>
             <a href="https://github.com/Avnoork2004/MediaVault" target="_blank" class="project-link">View Project</a>
         </div>
@@ -155,9 +180,7 @@
             <img src="Images/MyCarMate.png" alt="MyCarMate">
             <h3>MyCarMate</h3>
             <p>
-                MyCarMate is a car maintenance management application designed to help users track and manage
-                their vehicle-related tasks like maintenance records and insurance. Built with JavaFX, Firebase,
-                and PostgreSQL.
+                Car maintenance tracker for logs and reminders. JavaFX, Firebase, PostgreSQL.
             </p>
             <a href="https://github.com/selvap1/MyCarMateProject" target="_blank" class="project-link">View Project</a>
         </div>
@@ -166,16 +189,14 @@
             <img src="Images/edutrack.png" alt="EduTrack">
             <h3>EduTrack</h3>
             <p>
-                EduTrack is a JavaFX-based desktop application designed to manage user records focusing on
-                education. It uses MySQL and Azure Blob Storage for data and media management.
+                JavaFX app for managing education-focused records. MySQL + Azure Blob Storage.
             </p>
             <a href="https://github.com/mkhandker19/EduTrackApplication" target="_blank" class="project-link">View Project</a>
         </div>
-
     </div>
 </section>
 
-<!-- Hobbies Section -->
+<!-- HOBBIES -->
 <section id="hobbies">
     <h2>Hobbies</h2>
     <div class="hobbies-container">
@@ -194,37 +215,33 @@
     </div>
 </section>
 
-
-<!-- Contact Me -->
+<!-- CONTACT -->
 <section id="contact" class="contact-section">
     <h2>Connect With Me</h2>
     <p>Where I am reachable:</p>
 
     <div class="contact-links">
-        <a href="https://github.com/mkhandker19" target="_blank" class="contact-card">
-            <i class="fab fa-github"></i>
+        <a href="https://github.com/mkhandker19" target="_blank" class="contact-card" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
             <span>GitHub</span>
         </a>
 
-        <a href="https://www.linkedin.com/in/mahin-khandker-883938186/" target="_blank" class="contact-card">
-            <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/mahin-khandker-883938186/" target="_blank" class="contact-card" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
             <span>LinkedIn</span>
         </a>
 
-        <a href="mailto:mahinkhandker706@gmail.com" class="contact-card">
-            <i class="fas fa-envelope"></i>
+        <a href="mailto:mahinkhandker706@gmail.com" class="contact-card" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
             <span>Email</span>
         </a>
 
-        <a href="Docs/resume.pdf" target="_blank" class="contact-card">
-            <i class="fab fa-resume"></i>
+        <a href="Docs/resume.pdf" target="_blank" class="contact-card" aria-label="Resume">
+            <i class="fa-solid fa-file-lines"></i>
             <span>Resume</span>
         </a>
     </div>
 </section>
-
-
-</body>
 
 <!-- Footer -->
 <footer>
@@ -236,5 +253,5 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
+</body>
 </html>
