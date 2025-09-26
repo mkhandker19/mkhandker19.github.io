@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahin Khandker | Portfolio</title>
 
-    <!-- Font Awesome 6 (remove the old 4.7 include to avoid conflicts) -->
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 (icons used in Contact cards) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Main CSS -->
@@ -17,29 +21,19 @@
 <!-- Animated background -->
 <div class="animated-bg" aria-hidden="true"></div>
 
-<!-- Top Navbar -->
-<nav class="top-navbar">
-    <div class="nav-left">
-        <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="nav-right">
-        <a href="Docs/resume.pdf" target="_blank" title="Resume" aria-label="Resume">
-            <i class="fa-solid fa-file-lines"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/mahin-khandker-883938186/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/mkhandker19" target="_blank" title="GitHub" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-        </a>
+<!-- Top Navbar (centered) -->
+<nav class="top-navbar" aria-label="Primary">
+    <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Connect</a></li>
+    </ul>
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Toggle light/dark theme">
+        <label for="theme-toggle" class="theme-toggle" title="Toggle theme"></label>
     </div>
 </nav>
 
@@ -51,108 +45,107 @@
     </div>
 
     <!-- Name -->
-    <h1 class="name">
-        Hello, I am Mahin Khandker!
-    </h1>
+    <h1 class="name">Hello, I am Mahin Khandker!</h1>
 
-    <!-- About quick blurb (kept your paragraph below too) -->
-    <nav class="navbar" aria-label="Section navigation">
-        <ul class="nav-items">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Connect</a></li>
-        </ul>
-    </nav>
+
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-    <div class="about-me">
-        <p>
-            I am a Computer Science student at Farmingdale State College with a strong passion for software engineering and databases.
-            I enjoy building efficient, user-friendly applications and exploring backend technologies that power real-world systems.
-        </p>
+    <h2>About Me</h2>
+    <div class="about-card">
+        <div class="about-inner">
+            <p class="lead">
+                I’m a Computer Science student at Farmingdale State College focused on building clean,
+                fast, and reliable software. I enjoy crafting user-friendly interfaces, working with
+                databases, and turning ideas into polished, real-world applications.
+            </p>
+            <p class="sub">
+                My recent work spans Java/JavaFX apps, full-stack web projects, and cloud integrations
+                with Firebase and Azure. I’m always learning, experimenting, and shipping things I’m proud of.
+            </p>
+        </div>
     </div>
 </section>
 
-<div class="skills-container">
-    <div class="skill">
-        <img src="Images/htmll.png" alt="HTML">
-        <p>HTML</p>
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <img src="Images/htmll.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <img src="Images/cssss.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="Images/jss.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="Images/react.png" alt="React">
+            <p>React</p>
+        </div>
+        <div class="skill">
+            <img src="Images/nodejs.png" alt="Node.js">
+            <p>Node.js</p>
+        </div>
+        <div class="skill">
+            <img src="Images/shell.png" alt="Shell">
+            <p>Shell</p>
+        </div>
+        <div class="skill">
+            <img src="Images/sqll.png" alt="SQL">
+            <p>SQL</p>
+        </div>
+        <div class="skill">
+            <img src="Images/mongo.png" alt="MongoDB">
+            <p>MongoDB</p>
+        </div>
+        <div class="skill">
+            <img src="Images/firebase.png" alt="Firebase">
+            <p>Firebase</p>
+        </div>
+        <div class="skill">
+            <img src="Images/azure.png" alt="Azure">
+            <p>Azure</p>
+        </div>
+        <div class="skill">
+            <img src="Images/postgre.png" alt="PostgreSQL">
+            <p>PostgreSQL</p>
+        </div>
+        <div class="skill">
+            <img src="Images/java.png" alt="Java">
+            <p>Java</p>
+        </div>
+        <div class="skill">
+            <img src="Images/python.png" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="skill">
+            <img src="Images/c.png" alt="C">
+            <p>C</p>
+        </div>
+        <div class="skill">
+            <img src="Images/cplusplus.png" alt="C++">
+            <p>C++</p>
+        </div>
+        <div class="skill">
+            <img src="Images/git.png" alt="Git">
+            <p>Git</p>
+        </div>
+        <div class="skill">
+            <img src="Images/docker.png" alt="Docker">
+            <p>Docker</p>
+        </div>
+        <div class="skill">
+            <img src="Images/replit.png" alt="Replit">
+            <p>Replit</p>
+        </div>
     </div>
-    <div class="skill">
-        <img src="Images/cssss.png" alt="CSS">
-        <p>CSS</p>
-    </div>
-    <div class="skill">
-        <img src="Images/jss.png" alt="JavaScript">
-        <p>JavaScript</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="React">
-        <p>React</p>
-    </div>
-    <div class="skill">
-        <img src="Images/java.png" alt="Java">
-        <p>Java</p>
-    </div>
-    <div class="skill">
-        <img src="Images/sqll.png" alt="SQL">
-        <p>SQL</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="MongoDB">
-        <p>MongoDB</p>
-    </div>
-    <div class="skill">
-        <img src="Images/cplusplus.png" alt="C++">
-        <p>C++</p>
-    </div>
-    <div class="skill">
-        <img src="Images/c.png" alt="C">
-        <p>C</p>
-    </div>
-    <div class="skill">
-        <img src="Images/python.png" alt="Python">
-        <p>Python</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="Shell">
-        <p>Shell</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="Node.js">
-        <p>Node.js</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="Git">
-        <p>Git</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="Docker">
-        <p>Docker</p>
-    </div>
-    <div class="skill">
-        <img src="Images/shell.png" alt="Replit">
-        <p>Replit</p>
-    </div>
-    <!-- New skills -->
-    <div class="skill">
-        <img src="Images/firebase.png" alt="Firebase">
-        <p>Firebase</p>
-    </div>
-    <div class="skill">
-        <img src="Images/azure.png" alt="Azure">
-        <p>Azure</p>
-    </div>
-    <div class="skill">
-        <img src="Images/postgresql.png" alt="PostgreSQL">
-        <p>PostgreSQL</p>
-    </div>
-</div>
-
+</section>
 
 <!-- PROJECTS -->
 <section id="projects">
@@ -201,15 +194,15 @@
     <h2>Hobbies</h2>
     <div class="hobbies-container">
         <div class="hobby">
-            <img src="Images/cars.png" alt="Working on Cars">
+            <img src="Images/cars.jpg" alt="Working on Cars">
             <p>Working on Cars</p>
         </div>
         <div class="hobby">
-            <img src="Images/gaming.png" alt="Gaming">
+            <img src="Images/gaming.jpg" alt="Gaming">
             <p>Gaming</p>
         </div>
         <div class="hobby">
-            <img src="Images/travel.png" alt="Traveling">
+            <img src="Images/traveling.jpg" alt="Traveling">
             <p>Traveling</p>
         </div>
     </div>
@@ -218,7 +211,6 @@
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
     <h2>Connect With Me</h2>
-    <p>Where I am reachable:</p>
 
     <div class="contact-links">
         <a href="https://github.com/mkhandker19" target="_blank" class="contact-card" aria-label="GitHub">
